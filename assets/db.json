@@ -1,0 +1,26 @@
+{
+    "santos":[
+        {
+            "id":1,
+            "nombre":"Goku",
+            "constelacion":"came ame ha"
+        },
+        {
+            "id":2,
+            "nombre":"vegeta",
+            "constelacion":"destello final"
+        }
+    ],
+    "dioses":[
+        {
+            "id":1,
+            "nombre":"viss",
+            "universo":"7"
+        },
+        {
+            "id":2,
+            "nombre":"vermud",
+            "universo":"11"
+        }
+    ]
+}

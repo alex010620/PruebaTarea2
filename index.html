@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YAMC │ Reportes de Violacion Covid</title>
+    <link rel="icon" type="image/png" href="img/images.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Da+2&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="css/Style.css">
+    
+    <style>
+      .fondo
+      {
+        width: 100%;
+    height: 450px;
+    background: #0099F7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, rgba(241, 22, 18, 0.603), rgba(0, 152, 247, 0.603)), url("img/hero.jpg");  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, rgba(241, 22, 18, 0.603), rgba(0, 152, 247, 0.603)), url("img/hero.jpg"); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 82%, 0% 100%);
+   
+      }
+    </style>
+    
+</head>
+<body>
+  
+   <div class="fondo">
+    <nav class="animate__fadeInLeft">
+      <ul>
+          <li class="actual"><a href="index.php">Inicio</a></li>
+          <li><a href="index.php">ayuda</a></li>
+              <li><a href="file:///C:/Users/Alex/Desktop/login/index.html?#">Log In</a></li>
+      </ul>
+  </nav>
+ 
+  <h1>YAMC</h1>
+   </div>
+   <br>
+    <header>
+        <div class="contenedor">
+           
+            
+        </div>
+    </header>
+    <div class="automatico">
+        <ul>
+        <li><img src="img/especial-covid19.png" alt=""></li>
+        <li><img src="img/covid-19-aviso1.png" alt=""></li>
+        <li><img src="img/coronavirus (1).png" alt=""></li>
+        <li><img src="img/prevencion2.png" alt=""></li>
+        </ul>
+    </div>
+    <section id="boletin">
+        <div class="contenedor">
+            <h1>Unetenos</h1>
+            <section>
+              <input  class="er" type="email" name="email" placeholder="Ingrece el email...">
+                <button type="submit" class="button1">Enviar</button>
+            </section>
+        </div>
+      </section>
+      <br>
+      <div class="contenedo" id="reload">
+        
+        <form>
+            <h1 class="animate__animated animate__bounce"><i class="far fa-edit"></i>  Reportes de violaciones a las medias del covid</h1>
+            <br>
+            <div class="form-row">
+              
+                <div class="form-group col-md-6">
+                  <label for="inputCity">Lugar de donde se reporta</label>
+                  <input type="text" name="violacion" class="form-control" id="lugar">
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="inputState">Tipo de violacion</label>
+                  <select id="tipo" name="violacion" class="form-control">
+                    <option selected>Toque de quedad</option>
+                    <option>Uso de mascarilla</option>
+                     <option>Distanciamiento</option>
+                     <option>Aglomeracion</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-2">
+                  <label for="inputZip">Date</label>
+                  <input type="text" name="violacion" class="form-control" id="date">
+                </div>
+              </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputEmail4">Latitud</label>
+                <input type="text" name="violacion" class="form-control" id="CLatitud">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputPassword4">Longitud</label>
+                <input class="form-control" name="violacion" id="CLongitud">
+              </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputEmail4">Email</label>
+                  <input type="email" name="violacion" class="form-control" id="email">
+                </div>
+                
+              </div>
+            <div class="form-group">
+              <label for="inputAddress">Comentario</label>
+              <input type="text" class="form-control" name="violacion" id="coment" placeholder="Escribe un comentario...">
+            </div><br>
+            <button type="button" class="btn btn-primary" onclick="limpiar()"><i class="fas fa-plus"></i>   Nuevo</button>     
+            <button type="submit" class="btn btn-primary" onclick="guardar()"><i class="fas fa-check"></i>   Guardar</button>
+            <button type="submit" eliminar="{eliminar}" class="btn btn-danger" onclick="confirETodo()" id="Etodo"><i class="far fa-trash-alt"></i>    Eliminar Todo</button>
+            <button type="button" class="btn btn-warning" onclick="exito()"><i class="fas fa-search-location"></i>   Cargar mi ubicacion</button>
+          </form>
+        </section>
+        <br><br>
+        <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                
+                <th scope="col">Lugar del reporte</th>
+                <th scope="col">Tipo de Violacion</th>
+                <th scope="col">Fecha</th>
+                <th scope="col">Longitud</th>
+                <th scope="col">Latitud</th>
+                <th scope="col">Email</th>
+                <th scope="col">Accion</th>
+              </tr>
+            </thead>
+            <tbody id="bio">
+              
+            </tbody>
+            <textarea class="noVisible" name="" id="lacion" cols="30" rows="10">
+                <tr>
+                    <td>{lugar}</td>
+                    <td>{tipo}</td>
+                    <td>{date}</td>
+                    <td>{CLatitud}</td>
+                    <td>{CLongitud}</td>
+                    <td>{email}</td>
+                    <td>
+                        <button type="button"  class="btn btn-success" onclick="editarFila({indice})"><i class="far fa-edit"></i>   Editar</button>
+                        <button type="button" eliminar="{eliminar}" class="btn btn-danger" onclick="EliminarFilaReporte(this)"><i class="far fa-trash-alt"></i>   Eliminar</button>
+                    </td>
+              </textarea>
+          </table>
+          <br><br>
+          <h1><i class="far fa-comments"></i>  Comentarios</h1>
+          <br><br>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">Email</th>
+                <th scope="col">Comentario</th>
+                <td></td>
+              </tr>
+            </thead>
+            <tbody id="commenta">
+             
+            </tbody>
+          </table>
+          <textarea class="noVisible" name="" id="com" cols="30" rows="10">
+            <tr>
+                <th scope="row">{email}</th> 
+                <th scope="row">{comentario}</th> 
+                <th>
+                     
+                </th>
+              </tr>
+          </textarea>
+        
+    </div><br><br>
+    
+      <style>
+        #map{
+          width: 200px;
+          height: 200px;
+        }
+      </style>
+      <div id="map">
+    
+    </div>
+    <Script src="js/location.js"></Script>
+    <script src="js/localizacion.js"></script>
+</body>
+</html>

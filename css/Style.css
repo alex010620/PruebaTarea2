@@ -1,0 +1,197 @@
+body{
+    font: 15px Arial;
+    margin: 0;
+    padding: 0;
+    background: #acb6e5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, rgba(134, 253, 231, 0.658), hsla(229, 52%, 79%, 0.651));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, rgba(134, 253, 231, 0.651), rgba(172, 182, 229, 0.651)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    
+}
+/* Estilos gobales*/
+.contenedor{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+.contenedo{
+    width: 80%;
+    margin: 0 auto;
+   
+    
+}
+.fondo{
+    width: 100%;
+    height: 450px;
+    background: #0099F7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, rgba(241, 22, 18, 0.603), rgba(0, 152, 247, 0.603)), url("programacion.jpg");  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, rgba(241, 22, 18, 0.603), rgba(0, 152, 247, 0.603)), url("programacion.jpg"); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    -webkit-box-shadow: 0px 97px 107px -1px rgba(0,152,247,0.96);
+-moz-box-shadow: 0px 97px 107px -1px rgba(0,152,247,0.96);
+box-shadow: 0px 97px 107px -1px rgba(0,152,247,0.96);
+    
+}
+
+.fondo img{
+    width: 100%;
+    height: 100%;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.button1{
+    background-color: #e8491e;
+    height: 38px;
+    padding-left: 10px;
+    padding-right: 20px;
+    color: #fff;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+
+}
+/*Encabesado*/
+
+
+.fondo a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+
+}
+
+.fondo li{
+    float: left;
+    padding: 0 20px 0 20px;
+
+}
+.fondo #marco{
+   float: left;
+
+}
+.fondo  h1{
+    position: absolute;
+    left: 42%;
+    top: 30%;
+    transform: translateX(-50%), translateY(-50%);
+    text-align: center;
+    font-size: 5em;
+    color: #ccc;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+    
+ }
+ .fondo nav{
+  margin-top: 25px;
+  position: absolute;
+ 
+   
+
+ }
+ 
+ .actual .resultado,.fondo .actual a{
+     color: #1292d4;
+     font-weight: bold;
+
+ }  
+ .dos a:hover{
+    color: #1292d4;
+    font-weight: bold;
+ }
+ .fondo a:hover{
+     color: #ccc;
+     font-weight: bold;
+ }
+ /* cabesera*/
+.automatico{
+    width: 80%;
+    height: 50%;
+    margin:  auto;
+    overflow: hidden;
+    border-top: 4px solid #0099F7;
+    border-left:4px solid #0099F7 ;
+    border-right: 4px solid #0099F7;
+}
+.automatico ul{
+  padding: 0;
+  display: flex;
+  width: 400%;
+  animation: cambio 20s infinite;
+  animation-direction: alternate;
+}
+.automatico li{
+    list-style: none;
+    width: 100%;
+}
+.automatico img{
+    height: 100%;
+    width: 100%;
+}
+@keyframes cambio{
+    0% { margin-left: 0;}
+    20% { margin-left: 0;}
+
+    25% { margin-left: -100%;}
+    45% { margin-left: -100%;}
+
+    50% { margin-left: -200%;}
+    70% { margin-left: -200%;}
+
+    75% { margin-left: -300%;}
+    100% { margin-left: -300%;}
+}
+/*Formulario boletin*/
+#boletin{
+    padding: 3px;
+    color: #fff;
+    background: #343a40;
+    border-top: #1292d4 4px solid;
+    z-index: 99;
+    position: sticky;
+    top: 0%;
+    width: 80%;
+    margin: 0 auto;
+}
+#boletin h1{
+  float: left;
+}
+#boletin section{
+  float: right;
+  margin-top: 10px;
+}
+#boletin input[type="email"]{
+   padding: 5px;
+   height:25px ;
+   width: 250;
+   border-radius: 20px;
+   border: none;
+   outline: none;
+}
+#Etodo{
+    float: right;
+    margin-right: 5vh;
+}
+.noVisible{
+    display: none;
+}
+#n{
+    display: none;
+}
+::-webkit-scrollbar{
+  width: 10px;
+
+}
+::-webkit-scrollbar-track{
+    border: 7px solid #343a40;
+    box-shadow: inset 0 0 2.5px 2px rgba(0,0,0,0.5);
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(to right, rgb(241, 22, 18), rgb(0, 152, 247));
+    border-radius: 3px;
+}
